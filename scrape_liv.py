@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Scrapes the LIV Las Vegas nightclub lineup into events.json.
-Runs daily via GitHub Actions. Edit GENRES / FEATURED below to tune tags.
-Tries several ways to read the page (LIV blocks GitHub's servers):
+"""Scrapes the LIV Las Vegas nightclub AND LIV Beach lineups into
+events.json and beach-events.json. Runs daily via GitHub Actions on your Mac.
+Edit GENRES / FEATURED below to tune tags.
+Tries several ways to read the page (LIV blocks cloud servers):
 direct as Chrome, plain direct, then free relay services."""
 import json, re, sys, unicodedata
 from datetime import date, datetime, timedelta
@@ -13,8 +14,8 @@ from bs4 import BeautifulSoup
 
 URL = "https://www.livnightclub.com/las-vegas/"
 EVENTS_URL = URL + "events/"
-VENUE = "liv las vegas"          # nightclub only, skips LIV Beach
-OUT = "events.json"
+# venue name on the LIV site -> output file
+OUTPUTS = {"liv las vegas": "events.json", "liv beach": "beach-events.json"}
 LA = ZoneInfo("America/Los_Angeles")
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
@@ -37,6 +38,9 @@ GENRES = {
     "beltran": ("edm", "Techno"), "adriatique": ("edm", "Techno"),
     "laytongiordani": ("edm", "Techno / house"), "dod": ("edm", "Bass / dubstep"),
     "crankdat": ("edm", "Dubstep / bass"), "tiesto": ("edm", "EDM"), "samfeldt": ("edm", "Future house"),
+    "devault": ("edm", "House"), "riordan": ("edm", "Tech house"), "bensterling": ("edm", "Tech house"),
+    "johnsummit": ("edm", "House"), "davidguetta": ("edm", "EDM"), "kromi": ("edm", "Tech house"),
+    "shipwrek": ("edm", "Bass house"), "shamirkelly": ("open", "Open format"), "sommerray": ("open", "Open format"),
 }
 FEATURED = {"domdolla", "tiesto", "adriatique", "samfeldt", "metroboomin"}
 
@@ -47,8 +51,11 @@ CARD = re.compile(
     r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s*(\d{1,2})\s*"
     r"(.+?)\s*(LIV Las Vegas|LIV Beach)\s*\|\s*(\d{1,2}):(\d{2})\s*([ap]m)", re.I)
 
+def artist(name):
+    return re.sub(r"(?i)^liv beach at night:\s*", "", name)
+
 def classify(name):
-    base = norm(name.split(":")[0])
+    base = norm(artist(name).split(":")[0])
     if "latin" in name.lower() or base.startswith("vive"):
         return "open", "Latin / reggaeton"
     for k, v in GENRES.items():
@@ -56,7 +63,7 @@ def classify(name):
             return v
     return "edm", "Electronic"
 
-def build(cards, today):
+def build(cards, today, venue_want):
     """cards: list of (event_id, card_text, href, img_url)"""
     seen, events = set(), []
     for eid, text, href, img in cards:
@@ -64,7 +71,7 @@ def build(cards, today):
         if not found or eid in seen:
             continue
         mon, day, name, venue, hh, mm, ap = found[-1].groups()
-        if venue.lower() != VENUE:
+        if venue.lower() != venue_want:
             continue
         seen.add(eid)
         d = date(today.year, MONTHS[mon.lower()[:3]], int(day))
@@ -80,7 +87,7 @@ def build(cards, today):
               "time": f"{h:02d}:{mm}", "url": urljoin(URL, href)}
         if img and not img.startswith("data:"):
             ev["img"] = urljoin(URL, img)
-        if norm(name.split(":")[0]) in FEATURED or "new year" in name.lower():
+        if norm(artist(name).split(":")[0]) in FEATURED or "new year" in name.lower():
             ev["f"] = 1
         events.append(ev)
     events.sort(key=lambda e: e["d"])
@@ -162,17 +169,20 @@ def main():
     for label, fn in SOURCES:
         try:
             body = fn()
-            events = build(cards_any(body), today)
-            print(f"{label}: got {len(body)} chars, {len(events)} events")
-            if len(events) >= 3:
-                with open(OUT, "w", encoding="utf-8") as f:
-                    json.dump({"source": URL, "events": events}, f, ensure_ascii=False, indent=1)
-                print(f"Wrote {len(events)} events via {label}.")
+            cards = cards_any(body)
+            results = {v: build(cards, today, v) for v in OUTPUTS}
+            counts = ", ".join(f"{v}: {len(e)}" for v, e in results.items())
+            print(f"{label}: got {len(body)} chars -> {counts}")
+            if len(results["liv las vegas"]) >= 3:          # proves the page was read correctly
+                for v, events in results.items():
+                    with open(OUTPUTS[v], "w", encoding="utf-8") as f:
+                        json.dump({"source": URL, "venue": v, "events": events}, f, ensure_ascii=False, indent=1)
+                    print(f"Wrote {len(events)} events to {OUTPUTS[v]} via {label}.")
                 return
             print("   preview:", re.sub(r"\s+", " ", body[:500]))
         except Exception as e:
             print(f"{label} failed: {str(e)[:200]}")
-    sys.exit("All methods failed; keeping the old events.json.")
+    sys.exit("All methods failed; keeping the old files.")
 
 if __name__ == "__main__":
     main()
