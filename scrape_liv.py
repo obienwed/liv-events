@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Scrapes the LIV Las Vegas nightclub lineup into events.json.
-Runs daily via GitHub Actions. Edit GENRES / FEATURED below to tune tags."""
+Runs daily via GitHub Actions. Edit GENRES / FEATURED below to tune tags.
+Tries 3 ways to read the page (LIV blocks some servers):
+  1) direct, disguised as Chrome   2) plain direct   3) via r.jina.ai reader relay"""
 import json, re, sys, unicodedata
 from datetime import date, datetime, timedelta
 from urllib.parse import urljoin
@@ -13,6 +15,8 @@ URL = "https://www.livnightclub.com/las-vegas/"
 VENUE = "liv las vegas"          # nightclub only, skips LIV Beach
 OUT = "events.json"
 LA = ZoneInfo("America/Los_Angeles")
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/128.0 Safari/537.36")
 
 def norm(s):
     s = unicodedata.normalize("NFD", s)
@@ -39,7 +43,7 @@ MONTHS = {m: i for i, m in enumerate(
     ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"], 1)}
 CARD = re.compile(
     r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\w*\s*"
-    r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s*(\d{1,2})\s+"
+    r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s*(\d{1,2})\s*"
     r"(.+?)\s*(LIV Las Vegas|LIV Beach)\s*\|\s*(\d{1,2}):(\d{2})\s*([ap]m)", re.I)
 
 def classify(name):
@@ -51,18 +55,17 @@ def classify(name):
             return v
     return "edm", "Electronic"
 
-def parse(html, today):
-    soup = BeautifulSoup(html, "html.parser")
+def build(cards, today):
+    """cards: list of (event_id, card_text, href, img_url)"""
     seen, events = set(), []
-    for a in soup.find_all("a", href=re.compile(r"/event/EVE-")):
-        m_id = re.search(r"/event/(EVE-[A-Z0-9]+)", a["href"])
-        m = CARD.search(a.get_text(" ", strip=True))
-        if not m_id or not m or m_id.group(1) in seen:
+    for eid, text, href, img in cards:
+        found = list(CARD.finditer(text))
+        if not found or eid in seen:
             continue
-        mon, day, name, venue, hh, mm, ap = m.groups()
+        mon, day, name, venue, hh, mm, ap = found[-1].groups()
         if venue.lower() != VENUE:
             continue
-        seen.add(m_id.group(1))
+        seen.add(eid)
         d = date(today.year, MONTHS[mon.lower()[:3]], int(day))
         if d < today - timedelta(days=60):          # Jan listed in Oct = next year
             d = date(today.year + 1, d.month, d.day)
@@ -70,34 +73,82 @@ def parse(html, today):
             continue
         h = int(hh) % 12 + (12 if ap.lower() == "pm" else 0)
         name = re.sub(r"\s+[–—-]\s+", ": ", name.strip())
-        name = name.replace(" w ", " w/ ")
+        name = re.sub(r"\s+w\s+", " w/ ", name)
         g, t = classify(name)
         ev = {"d": d.isoformat(), "n": name, "g": g, "t": t,
-              "time": f"{h:02d}:{mm}", "url": urljoin(URL, a["href"])}
-        img = a.find("img")
-        if img:
-            src = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
-            if not src and img.get("srcset"):
-                src = img["srcset"].split(",")[0].split()[0]
-            if src and not src.startswith("data:"):
-                ev["img"] = urljoin(URL, src)
+              "time": f"{h:02d}:{mm}", "url": urljoin(URL, href)}
+        if img and not img.startswith("data:"):
+            ev["img"] = urljoin(URL, img)
         if norm(name.split(":")[0]) in FEATURED or "new year" in name.lower():
             ev["f"] = 1
         events.append(ev)
     events.sort(key=lambda e: e["d"])
     return events
 
-def main():
-    r = requests.get(URL, timeout=30, headers={
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                      "(KHTML, like Gecko) Chrome/128.0 Safari/537.36"})
+def cards_from_html(html):
+    soup = BeautifulSoup(html, "html.parser")
+    out = []
+    for a in soup.find_all("a", href=re.compile(r"/event/EVE-")):
+        m = re.search(r"/event/(EVE-[A-Z0-9]+)", a["href"])
+        if not m:
+            continue
+        img_url = ""
+        img = a.find("img")
+        if img:
+            img_url = img.get("data-src") or img.get("data-lazy-src") or img.get("src") or ""
+            if not img_url and img.get("srcset"):
+                img_url = img["srcset"].split(",")[0].split()[0]
+        out.append((m.group(1), a.get_text(" ", strip=True), a["href"], img_url))
+    return out
+
+LINK = re.compile(r"\]\((https?://[^)\s]*?/event/(EVE-[A-Z0-9]+)[^)\s]*)\)")
+MDIMG = re.compile(r"!\[[^\]]*\]\(([^)\s]+)[^)]*\)")
+
+def cards_from_markdown(md):
+    out, last = [], 0
+    for m in LINK.finditer(md):
+        chunk = md[last:m.start()]
+        last = m.end()
+        imgs = MDIMG.findall(chunk)
+        text = MDIMG.sub(" ", chunk)
+        text = re.sub(r"[*_#\[\]]", " ", text)
+        text = re.sub(r"\s+", " ", text)
+        out.append((m.group(2), text, m.group(1), imgs[-1] if imgs else ""))
+    return out
+
+def get_direct_chrome():
+    from curl_cffi import requests as creq
+    r = creq.get(URL, impersonate="chrome", timeout=40)
     r.raise_for_status()
-    events = parse(r.text, datetime.now(LA).date())
-    if len(events) < 3:
-        sys.exit(f"Only found {len(events)} events; keeping the old events.json.")
-    with open(OUT, "w", encoding="utf-8") as f:
-        json.dump({"source": URL, "events": events}, f, ensure_ascii=False, indent=1)
-    print(f"Wrote {len(events)} events.")
+    return cards_from_html(r.text)
+
+def get_direct_plain():
+    r = requests.get(URL, timeout=40, headers={"User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
+    r.raise_for_status()
+    return cards_from_html(r.text)
+
+def get_relay():
+    r = requests.get("https://r.jina.ai/" + URL, timeout=90,
+                     headers={"X-Return-Format": "markdown", "X-No-Cache": "true"})
+    r.raise_for_status()
+    return cards_from_markdown(r.text)
+
+def main():
+    today = datetime.now(LA).date()
+    for label, fn in [("direct (Chrome)", get_direct_chrome),
+                      ("direct (plain)", get_direct_plain),
+                      ("relay (r.jina.ai)", get_relay)]:
+        try:
+            events = build(fn(), today)
+            print(f"{label}: {len(events)} events")
+            if len(events) >= 3:
+                with open(OUT, "w", encoding="utf-8") as f:
+                    json.dump({"source": URL, "events": events}, f, ensure_ascii=False, indent=1)
+                print(f"Wrote {len(events)} events via {label}.")
+                return
+        except Exception as e:
+            print(f"{label} failed: {e}")
+    sys.exit("All methods failed; keeping the old events.json.")
 
 if __name__ == "__main__":
     main()
