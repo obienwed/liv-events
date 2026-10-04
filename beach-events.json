@@ -1,0 +1,106 @@
+{
+ "source": "https://www.livnightclub.com/las-vegas/",
+ "venue": "liv beach",
+ "events": [
+  {
+   "d": "2026-10-08",
+   "n": "Westend and Biscits",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-JZZM7C/westend-and-biscits/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Biscits-Westend-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-09",
+   "n": "Beltran",
+   "g": "edm",
+   "t": "Techno",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-6YMS4P/beltran/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Beltran-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-09",
+   "n": "LIV Beach at Night: Beltran",
+   "g": "edm",
+   "t": "Techno",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-2BCHCM/liv-beach-at-night-beltran/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/Untitled-design-9.png"
+  },
+  {
+   "d": "2026-10-10",
+   "n": "Tiësto",
+   "g": "edm",
+   "t": "EDM",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-VA231S/tiesto/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Tiesto-500x500-3.jpg",
+   "f": 1
+  },
+  {
+   "d": "2026-10-10",
+   "n": "LIV Beach at Night: Nic Vans",
+   "g": "edm",
+   "t": "House",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-OXAECO/liv-beach-at-night-nic-vans/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/401051509633.png"
+  },
+  {
+   "d": "2026-10-11",
+   "n": "Cloonee",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-QYTWP1/cloonee/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Cloonee-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-15",
+   "n": "Riordan",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-9HGDTD/riordan/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Riordan-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-16",
+   "n": "Westend",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-DBJK9Z/westend/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/2-1768596440382-DW8o.jpg"
+  },
+  {
+   "d": "2026-10-17",
+   "n": "Sidepiece",
+   "g": "edm",
+   "t": "House",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-K2UJ17/sidepiece/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Sidepiece-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-17",
+   "n": "LIV Beach at Night: Ben Sterling",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-QGO6M4/liv-beach-at-night-ben-sterling/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/Ben-Sterling-10.17-520-x-520-px-copy.png"
+  },
+  {
+   "d": "2026-10-18",
+   "n": "Riordan",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-JX6ADX/riordan/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Riordan-500x500-2.jpg"
+  }
+ ]
+}
