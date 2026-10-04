@@ -7,7 +7,7 @@ permissions:
   contents: write
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted    # runs on your Mac (LIV blocks GitHub's servers)
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
