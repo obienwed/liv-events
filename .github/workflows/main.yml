@@ -10,11 +10,13 @@ jobs:
     runs-on: self-hosted    # runs on your Mac (LIV blocks GitHub's servers)
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
-        with:
-          python-version: "3.12"
-      - run: pip install requests beautifulsoup4 curl_cffi
-      - run: python scrape_liv.py
+      - name: Set up Python packages
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install -q --upgrade pip
+          .venv/bin/pip install -q requests beautifulsoup4 curl_cffi
+      - name: Scrape LIV lineup
+        run: .venv/bin/python scrape_liv.py
       - name: Commit if changed
         run: |
           git config user.name "liv-bot"
