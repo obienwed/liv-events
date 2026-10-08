@@ -7,7 +7,7 @@
    "n": "Max Styler",
    "g": "edm",
    "t": "House",
-   "time": "22:30",
+   "time": "22:00",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-ZCR5ZF/max-styler/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Max-Styler-500x500-BG2.jpg"
   },
@@ -16,7 +16,7 @@
    "n": "Dom Dolla",
    "g": "edm",
    "t": "House",
-   "time": "22:30",
+   "time": "22:00",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-EU1F7B/dom-dolla/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Dom-Dolla-500x500-BG3.jpg",
    "f": 1
@@ -26,7 +26,7 @@
    "n": "D.O.D",
    "g": "edm",
    "t": "Bass / dubstep",
-   "time": "22:30",
+   "time": "22:00",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-TVWGP6/d-o-d/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-D.O.D-500x500-BG4.jpg"
   },
@@ -35,7 +35,7 @@
    "n": "Prospa",
    "g": "edm",
    "t": "House / breaks",
-   "time": "22:30",
+   "time": "22:00",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-0R1QW1/prospa/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/2-1768595711199-7uob.jpg"
   },
@@ -77,6 +77,24 @@
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Kettama-500x500-BG6.jpg"
   },
   {
+   "d": "2026-10-22",
+   "n": "LIV X MAYFAIR: Benny Benassi",
+   "g": "edm",
+   "t": "Electronic",
+   "time": "22:00",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-HAZX39/liv-x-mayfair-benny-benassi/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/261022-LIV-Mayfair-F1-Weekend-Benny-Benassi-Social-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-23",
+   "n": "LIV X MAYFAIR: Bryce Alakai: Sunset Party",
+   "g": "edm",
+   "t": "Electronic",
+   "time": "15:00",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-K816OH/liv-x-mayfair-bryce-alakai-sunset-party/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/261025-LIV-Mayfair-F1-Weekend-Bryce-Alakai-Social-500x500-1.jpg"
+  },
+  {
    "d": "2026-10-23",
    "n": "Sidepiece",
    "g": "edm",
@@ -87,12 +105,30 @@
   },
   {
    "d": "2026-10-24",
+   "n": "LIV X MAYFAIR: Ian Asher: Sunset Party",
+   "g": "edm",
+   "t": "Electronic",
+   "time": "13:00",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-4OE832/liv-x-mayfair-ian-asher-sunset-party/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/261024-LIV-Mayfair-F1-Weekend-Ian-Asher-500x500-1.jpg"
+  },
+  {
+   "d": "2026-10-24",
    "n": "Nic Vans",
    "g": "edm",
    "t": "House",
    "time": "22:30",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-UO5ZYB/nic-vans/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Nic-Vans-500x500-BG6.jpg"
+  },
+  {
+   "d": "2026-10-25",
+   "n": "LIV X MAYFAIR AUSTIN: Joe Kay: Sunset Party",
+   "g": "edm",
+   "t": "Electronic",
+   "time": "15:00",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-FEEJCK/liv-x-mayfair-austin-joe-kay-sunset-party/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/261025-LIV-Mayfair-F1-Weekend-Joe-Kay-Social-500x500-1.jpg"
   },
   {
    "d": "2026-10-25",
