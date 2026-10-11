@@ -3,34 +3,6 @@
  "venue": "liv beach",
  "events": [
   {
-   "d": "2026-10-10",
-   "n": "Tiësto",
-   "g": "edm",
-   "t": "EDM",
-   "time": "11:00",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-VA231S/tiesto/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Tiesto-500x500-3.jpg",
-   "f": 1
-  },
-  {
-   "d": "2026-10-10",
-   "n": "LIV Beach at Night: Nic Vans",
-   "g": "edm",
-   "t": "House",
-   "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-OXAECO/liv-beach-at-night-nic-vans/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/401051509633.png"
-  },
-  {
-   "d": "2026-10-11",
-   "n": "Westend",
-   "g": "edm",
-   "t": "Tech house",
-   "time": "11:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-QYTWP1/westend/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Westend-500x500-2.jpg"
-  },
-  {
    "d": "2026-10-15",
    "n": "Riordan",
    "g": "edm",
