@@ -3,22 +3,13 @@
  "venue": "liv beach",
  "events": [
   {
-   "d": "2026-10-15",
-   "n": "Riordan",
-   "g": "edm",
-   "t": "Tech house",
-   "time": "11:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-9HGDTD/riordan/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Riordan-500x500-1.jpg"
-  },
-  {
    "d": "2026-10-16",
-   "n": "Westend",
+   "n": "Devault",
    "g": "edm",
-   "t": "Tech house",
+   "t": "House",
    "time": "11:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-DBJK9Z/westend/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Westend-500x500-1.jpg"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-DBJK9Z/devault/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/4qEsd-1779997471775-JqH2.jpg"
   },
   {
    "d": "2026-10-17",

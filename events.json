@@ -3,15 +3,6 @@
  "venue": "liv las vegas",
  "events": [
   {
-   "d": "2026-10-15",
-   "n": "Beltran",
-   "g": "edm",
-   "t": "Techno",
-   "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-26BHMW/beltran/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Beltran-500x500-BG1.jpg"
-  },
-  {
    "d": "2026-10-16",
    "n": "Tiësto",
    "g": "edm",
@@ -179,12 +170,12 @@
   },
   {
    "d": "2026-11-27",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "SOSA",
+   "g": "edm",
+   "t": "Electronic",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-UCYLYL/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/500x500-1-6.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-UCYLYL/sosa/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/261127-LLV-Sosa-Social-500x500-1.jpg"
   },
   {
    "d": "2026-11-28",
@@ -290,21 +281,21 @@
   },
   {
    "d": "2027-01-02",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Sidepiece",
+   "g": "edm",
+   "t": "House",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-PIIO60/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1-6.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-PIIO60/sidepiece/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/44uTI-1788372491381-Vym1.jpg"
   },
   {
    "d": "2027-01-08",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Matroda",
+   "g": "edm",
+   "t": "Bass house",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-92M7BR/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1-5.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-92M7BR/matroda/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/2-1768155220658-0loi.jpg"
   },
   {
    "d": "2027-01-09",
@@ -335,12 +326,13 @@
   },
   {
    "d": "2027-01-22",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Metro Boomin",
+   "g": "hiphop",
+   "t": "Hip-hop",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-EAUH6Z/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1-8.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-EAUH6Z/metro-boomin/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/2-1768947861407-CeRr.jpg",
+   "f": 1
   },
   {
    "d": "2027-01-23",
@@ -362,21 +354,22 @@
   },
   {
    "d": "2027-01-29",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Sam Feldt",
+   "g": "edm",
+   "t": "Future house",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-Z78950/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1-1.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-Z78950/sam-feldt/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/7r3f3-1787853920073-Bdne.jpg",
+   "f": 1
   },
   {
    "d": "2027-01-30",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
-   "time": "10:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-855YSX/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1.png"
+   "n": "Max Styler",
+   "g": "edm",
+   "t": "House",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-855YSX/max-styler/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/2-1768519569212-HOQo.jpg"
   }
  ]
 }
