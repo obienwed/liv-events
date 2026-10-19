@@ -1,15 +1,5 @@
 {
  "source": "https://www.livnightclub.com/las-vegas/",
  "venue": "liv beach",
- "events": [
-  {
-   "d": "2026-10-18",
-   "n": "Riordan",
-   "g": "edm",
-   "t": "Tech house",
-   "time": "11:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-JX6ADX/riordan/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-BEACH-Resident-Artists-Riordan-500x500-2.jpg"
-  }
- ]
+ "events": []
 }
