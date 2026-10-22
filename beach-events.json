@@ -1,5 +1,15 @@
 {
  "source": "https://www.livnightclub.com/las-vegas/",
  "venue": "liv beach",
- "events": []
+ "events": [
+  {
+   "d": "2026-11-21",
+   "n": "APRÈS BEACH: Disco Lines",
+   "g": "edm",
+   "t": "Electronic",
+   "time": "11:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-5NJV24/apres-beach-disco-lines/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/261121-BEACH-Apres-Beach-500x500-1.jpg"
+  }
+ ]
 }
