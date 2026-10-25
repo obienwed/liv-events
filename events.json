@@ -3,24 +3,6 @@
  "venue": "liv las vegas",
  "events": [
   {
-   "d": "2026-10-23",
-   "n": "Sidepiece",
-   "g": "edm",
-   "t": "House",
-   "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-BKE7XK/sidepiece/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Sidepiece-500x500-BG2.jpg"
-  },
-  {
-   "d": "2026-10-24",
-   "n": "Nic Vans",
-   "g": "edm",
-   "t": "House",
-   "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-UO5ZYB/nic-vans/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Nic-Vans-500x500-BG6.jpg"
-  },
-  {
    "d": "2026-10-30",
    "n": "Layton Giordani",
    "g": "edm",
