@@ -133,12 +133,12 @@
   },
   {
    "d": "2026-12-05",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Westend",
+   "g": "edm",
+   "t": "Tech house",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-6YTY3G/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/LIV-500x500-1.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-6YTY3G/westend/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Westend-500x500-BG2.jpg"
   },
   {
    "d": "2026-12-06",
@@ -179,12 +179,12 @@
   },
   {
    "d": "2026-12-18",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Four Color Zack",
+   "g": "edm",
+   "t": "Electronic",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-LTRGM3/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/500x500-1-1.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-LTRGM3/four-color-zack/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Four-Color-Zack-500x500-BG6.jpg"
   },
   {
    "d": "2026-12-19",
@@ -306,6 +306,33 @@
    "time": "22:30",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-855YSX/max-styler/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/2-1768519569212-HOQo.jpg"
+  },
+  {
+   "d": "2027-02-05",
+   "n": "Layton Giordani",
+   "g": "edm",
+   "t": "Techno / house",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-FSIKYV/layton-giordani/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/260000-LLV-Resident-Artists-Layton-Giordani-500x500-BG2.jpg"
+  },
+  {
+   "d": "2027-02-20",
+   "n": "Eli Brown",
+   "g": "edm",
+   "t": "Tech house",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-IFF5HL/eli-brown/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/260000-LLV-Resident-Artists-Eli-Brown-500x500-BG6.jpg"
+  },
+  {
+   "d": "2027-02-26",
+   "n": "Matroda",
+   "g": "edm",
+   "t": "Bass house",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-PVBVUC/matroda/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/260000-LLV-Resident-Artists-Matroda-500x500-BG2.jpg"
   }
  ]
 }
