@@ -3,25 +3,6 @@
  "venue": "liv las vegas",
  "events": [
   {
-   "d": "2026-10-31",
-   "n": "Adriatique",
-   "g": "edm",
-   "t": "Techno",
-   "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-A0W2XT/adriatique/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/261031-LLV-HW-Ward-54-Adriatique-500x500-1-1024x1024.jpg",
-   "f": 1
-  },
-  {
-   "d": "2026-11-01",
-   "n": "Kettama",
-   "g": "edm",
-   "t": "House",
-   "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-WTX54V/kettama/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/261101-LLV-HW-Ward-54-Kettama-500x500-1-1024x1024.jpg"
-  },
-  {
    "d": "2026-11-06",
    "n": "Crankdat",
    "g": "edm",
@@ -59,12 +40,12 @@
   },
   {
    "d": "2026-11-15",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Benjo",
+   "g": "edm",
+   "t": "Electronic",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-8LTRKF/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/500x500-1-7.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-8LTRKF/benjo/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Benjo-500x500-BG4.jpg"
   },
   {
    "d": "2026-11-19",
