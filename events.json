@@ -105,12 +105,12 @@
   },
   {
    "d": "2026-12-11",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Layton Giordani",
+   "g": "edm",
+   "t": "Techno / house",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-S84WF7/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/500x500-1-4.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-S84WF7/layton-giordani/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/08/260000-LLV-Resident-Artists-Layton-Giordani-500x500-BG5.jpg"
   },
   {
    "d": "2026-12-12",
@@ -217,30 +217,30 @@
   },
   {
    "d": "2027-01-22",
-   "n": "Metro Boomin",
-   "g": "hiphop",
-   "t": "Hip-hop",
+   "n": "Max Styler: College Football Championship Weekend",
+   "g": "edm",
+   "t": "House",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-EAUH6Z/metro-boomin/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/2-1768947861407-CeRr.jpg",
-   "f": 1
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-EAUH6Z/max-styler-college-football-championship-weekend/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/NkF42-1792107283236-98t4.jpg"
   },
   {
    "d": "2027-01-23",
-   "n": "Special Guest",
-   "g": "open",
-   "t": "Open format",
+   "n": "Metro Boomin: College Football Championship Weekend",
+   "g": "hiphop",
+   "t": "Hip-hop",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-JZQJ7M/special-guest/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1-9.png"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-JZQJ7M/metro-boomin-college-football-championship-weekend/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/PRI5U-1792107452588-vSl8.jpg",
+   "f": 1
   },
   {
    "d": "2027-01-24",
-   "n": "Special Guest",
+   "n": "Special Guest: College Football Championship Weekend",
    "g": "open",
    "t": "Open format",
    "time": "22:00",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-G0XZ90/special-guest/",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-G0XZ90/special-guest-college-football-championship-weekend/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/500x500-1-10.png"
   },
   {
@@ -255,12 +255,12 @@
   },
   {
    "d": "2027-01-30",
-   "n": "Max Styler",
-   "g": "edm",
-   "t": "House",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
    "time": "22:30",
-   "url": "https://www.livnightclub.com/las-vegas/event/EVE-855YSX/max-styler/",
-   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/2-1768519569212-HOQo.jpg"
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-855YSX/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/09/MmvKB-1782856452916-mWvx.png"
   },
   {
    "d": "2027-02-05",
@@ -270,6 +270,43 @@
    "time": "22:30",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-FSIKYV/layton-giordani/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/260000-LLV-Resident-Artists-Layton-Giordani-500x500-BG2.jpg"
+  },
+  {
+   "d": "2027-02-06",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-EJ34SL/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-13.png"
+  },
+  {
+   "d": "2027-02-12",
+   "n": "Special Guest: Big Game Weekend",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-M6QCL1/special-guest-big-game-weekend/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-12.png"
+  },
+  {
+   "d": "2027-02-13",
+   "n": "Metro Boomin: Big Game Weekend",
+   "g": "hiphop",
+   "t": "Hip-hop",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-GXU9HC/metro-boomin-big-game-weekend/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/PRI5U-1792107452588-vSl8.jpg",
+   "f": 1
+  },
+  {
+   "d": "2027-02-19",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-ZWKH38/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-11.png"
   },
   {
    "d": "2027-02-20",
@@ -288,6 +325,105 @@
    "time": "22:30",
    "url": "https://www.livnightclub.com/las-vegas/event/EVE-PVBVUC/matroda/",
    "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/10/260000-LLV-Resident-Artists-Matroda-500x500-BG2.jpg"
+  },
+  {
+   "d": "2027-02-27",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-V09S61/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-10.png"
+  },
+  {
+   "d": "2027-03-05",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-HUL5VB/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-9.png"
+  },
+  {
+   "d": "2027-03-06",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-L6EMOK/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-8.png"
+  },
+  {
+   "d": "2027-03-12",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-2U4R9Z/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-7.png"
+  },
+  {
+   "d": "2027-03-13",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-DUEOHS/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-6.png"
+  },
+  {
+   "d": "2027-03-19",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-30E87S/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-5.png"
+  },
+  {
+   "d": "2027-03-20",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-QRZ1VM/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-4.png"
+  },
+  {
+   "d": "2027-03-21",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-JGYX26/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-3.png"
+  },
+  {
+   "d": "2027-03-26",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-8VFMRX/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-2.png"
+  },
+  {
+   "d": "2027-03-27",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-C6J577/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx-1.png"
+  },
+  {
+   "d": "2027-03-28",
+   "n": "Special Guest",
+   "g": "open",
+   "t": "Open format",
+   "time": "22:30",
+   "url": "https://www.livnightclub.com/las-vegas/event/EVE-S3K4XM/special-guest/",
+   "img": "https://www.livnightclub.com/las-vegas/wp-content/uploads/2026/11/MmvKB-1782856452916-mWvx.png"
   }
  ]
 }
